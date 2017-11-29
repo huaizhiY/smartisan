@@ -1,0 +1,22 @@
+{
+  "name": "smartisan",
+  "version": "1.0.0",
+  "description": "smartisan project for onlink class",
+  "main": "index.js",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-sass-china": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "huaizhiY",
+  "license": "ISC"
+}

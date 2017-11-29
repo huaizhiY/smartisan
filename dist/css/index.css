@@ -1,0 +1,300 @@
+@charset "UTF-8";
+html {
+  overflow-x: hidden;
+  overflow-y: auto; }
+
+/*隐藏横向滚动，垂直滚动根据内容自适应（去除IE默认垂直滚动条）*/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, fieldset,
+lengend, button, select, input, textarea, th, td {
+  /* 清除内外边距 */
+  margin: 0;
+  padding: 0; }
+
+body, button, input, select, textarea {
+  /* 设置默认字体 */
+  font-family: PingFang SC,Helvetica Neue,Helvetica,Arial,Hiragino Sans GB,Microsoft Yahei,\\5FAE\8F6F\96C5\9ED1,STHeiti,\\534E\6587\7EC6\9ED1,sans-serif; }
+
+h1 {
+  font-size: 18px; }
+
+h2 {
+  font-size: 16px; }
+
+h3 {
+  font-size: 14px; }
+
+h4, h5, h6 {
+  font-size: 100%; }
+
+ul, ol {
+  list-style: none; }
+
+/* 重置列表元素 */
+/* 重置文本格式元素  */
+a {
+  text-decoration: none;
+  color: #000; }
+
+q:before, q:after {
+  content: ''; }
+
+/* 重置表单元素 */
+legend {
+  color: #000; }
+
+fieldset, img {
+  border: none; }
+
+button, input, select, textarea {
+  font-size: 100%;
+  /* 使得表单元素在 ie 下能继承字体大小 */ }
+
+/* 重置表格元素 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* 重置 hr */
+hr {
+  border: none;
+  height: 1px; }
+
+/* 头部区域 */
+html {
+  background: #ededed; }
+
+/* 头部样式 */
+.header-wrap {
+  height: 100px;
+  overflow: hidden;
+  background: #1a1a1a; }
+  .header-wrap .header-content {
+    width: 1220px;
+    margin-left: auto;
+    margin-right: auto; }
+
+.nav-logo {
+  margin-right: 50px;
+  margin-top: -10px;
+  float: left; }
+  .nav-logo a {
+    display: block;
+    background-image: url(../images/qflogo.png);
+    width: 209px;
+    height: 54px; }
+
+.nav-logo:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.nav-list {
+  margin: 36px 181px 0 0; }
+  .nav-list li {
+    padding: 0 25px;
+    font-size: 14px;
+    float: left;
+    line-height: 28px; }
+    .nav-list li.active a {
+      color: #fff; }
+    .nav-list li a {
+      color: #c8c8c8;
+      transition: color .3s; }
+      .nav-list li a:hover {
+        color: #fff; }
+
+.nav-list:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.nav-aside {
+  width: 159px;
+  height: 20px;
+  position: absolute;
+  right: 0;
+  top: 38px; }
+  .nav-aside .nav-user {
+    float: left; }
+    .nav-aside .nav-user a {
+      display: inline-block;
+      width: 36px;
+      height: 20px;
+      background-image: url(../images/account-icon.png);
+      background-position: -150px 0px; }
+      .nav-aside .nav-user a:hover {
+        background-position: 0px 0px; }
+  .nav-aside .nav-cart {
+    float: left; }
+    .nav-aside .nav-cart a {
+      display: inline-block;
+      width: 30px;
+      height: 20px;
+      background-image: url(../images/account-icon.png);
+      background-position: -150px -20px; }
+      .nav-aside .nav-cart a:hover {
+        background-position: 0 -20px; }
+    .nav-aside .nav-cart span {
+      display: inline-block;
+      width: 30px;
+      height: 20px;
+      position: relative;
+      /*购物车显示区域*/ }
+      .nav-aside .nav-cart span i {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+        color: #fff;
+        line-height: 20px;
+        text-align: center;
+        background: #969696;
+        background-image: linear-gradient(#a4a4a4, #909090);
+        box-shadow: inset 0 0 1px #838383, 0 1px 2px #838383;
+        font-size: 12px;
+        font-style: normal;
+        position: absolute;
+        margin-left: -5px; }
+      .nav-aside .nav-cart span .nav-cart-content {
+        width: 314px;
+        padding-top: 180px;
+        position: absolute;
+        background-color: #fff;
+        top: 40px;
+        right: 0px;
+        border-radius: 5px;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+        display: none; }
+      .nav-aside .nav-cart span .nav-cart-content:before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 8px;
+        background: url(../images/account-icon.png) no-repeat -49px -43px;
+        position: absolute;
+        top: -8px;
+        right: 38px; }
+
+.nav-fixed {
+  padding: 31px 0; }
+  .nav-fixed .nav-fixed-content {
+    width: 1220px;
+    margin-left: auto;
+    margin-right: auto; }
+    .nav-fixed .nav-fixed-content li {
+      float: left; }
+      .nav-fixed .nav-fixed-content li a {
+        padding: 20px;
+        font-size: 14px;
+        line-height: 28px;
+        color: #666; }
+        .nav-fixed .nav-fixed-content li a:hover {
+          transition: color .3s;
+          color: #5079d9; }
+    .nav-fixed .nav-fixed-content li.active {
+      font-weight: bold; }
+
+.nav-fixed .fixed {
+  position: absolute; }
+
+.banner-3d {
+  width: 1220px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  perspective: 3000px; }
+  .banner-3d .banner-show {
+    width: 1220px;
+    height: 500px;
+    position: absolute;
+    transform-style: preserve-3d; }
+    .banner-3d .banner-show li {
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 1220px;
+      height: 500px; }
+      .banner-3d .banner-show li .banner-wrap .banner-box-1, .banner-3d .banner-show li .banner-wrap .banner-box-2, .banner-3d .banner-show li .banner-wrap .banner-box-3 {
+        width: 1220px;
+        height: 500px;
+        position: absolute; }
+      .banner-3d .banner-show li .banner-wrap .banner-box-1 {
+        z-index: 3; }
+      .banner-3d .banner-show li .banner-wrap .banner-box-2 {
+        z-index: 2; }
+      .banner-3d .banner-show li .banner-wrap .banner-box-3 {
+        z-index: 1; }
+      .banner-3d .banner-show li .banner-wrap img {
+        border-radius: 10px;
+        width: 100%; }
+    .banner-3d .banner-show li.active {
+      display: block; }
+  .banner-3d .banner-shadow {
+    width: 1220px;
+    height: 500px;
+    position: absolute; }
+    .banner-3d .banner-shadow img {
+      width: 1220px;
+      height: 500px; }
+  .banner-3d .banner-buttons {
+    width: 300px;
+    height: 18px;
+    position: absolute;
+    left: 50%;
+    bottom: 28px;
+    margin-left: -150px;
+    text-align: center;
+    transform: translateZ(60px); }
+    .banner-3d .banner-buttons li {
+      position: relative;
+      z-index: 3;
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      background: url(../images/banner-button.png) no-repeat;
+      background-size: 100% auto;
+      cursor: pointer; }
+    .banner-3d .banner-buttons li.active {
+      background-position: 0 -18px; }
+
+.activity-panel {
+  width: 1220px;
+  height: 200px;
+  padding-top: 30px;
+  margin-left: auto;
+  margin-right: auto; }
+  .activity-panel .list {
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    margin-top: 29px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 3px 8px -6px rgba(0, 0, 0, 0.1);
+    margin-left: auto;
+    margin-right: auto; }
+    .activity-panel .list li {
+      float: left;
+      position: relative;
+      width: 25%;
+      height: 200px; }
+      .activity-panel .list li img {
+        width: 100%;
+        height: 100%; }
+      .activity-panel .list li a {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 4;
+        cursor: pointer; }
+      .activity-panel .list li a:hover {
+        display: block;
+        box-shadow: inset 0 0 38px rgba(0, 0, 0, 0.08);
+        transition: all .15s ease; }

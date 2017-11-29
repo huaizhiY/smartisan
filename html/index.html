@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>官方在线商城 - Smartisan</title>
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<!--头部区域-->
+	<header>
+		<div class="header-wrap">
+			<div class="header-content">
+				<div class="nav-logo">
+					<a href="#javascript" title="千锋教育"></a>
+				</div>
+				<ul class="nav-list">
+					<!--active 类增加高亮 -->
+					<li><a href="#javascript">在线商城</a></li>
+					<li><a href="#javascript">坚果Pro2</a></li>
+					<li><a href="#javascript">坚果Pro</a></li>
+					<li><a href="#javascript"> Smartisan OS </a></li>
+					<li><a href="#javascript">喜欢云</a></li>
+					<li><a href="#javascript">应用下载</a></li>
+					<li><a href="#javascript">官方论坛</a></li>
+				</ul>
+				<div class="nav-aside">
+					<div class="nav-user">
+						<a href="#javascript"></a>
+						</div>
+					<div class="nav-cart">
+						<a href="#javascript"></a>
+						<span href="#javascript">
+							<i>0</i>
+							<div class="nav-cart-content">
+							
+							</div>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 定位部分页面 -->
+		<div class="nav-fixed fixed">
+			<div class="nav-fixed-content">
+				<ul>
+					<li class="active"><a href="#javascript">首页</a></li>
+					<li><a href="#javascript">手机</a></li>
+					<li><a href="#javascript">“足迹系列”手感膜</a></li>
+					<li><a href="#javascript">“足迹系列”保护套</a></li>
+					<li><a href="#javascript">官方配件</a></li>
+					<li><a href="#javascript">空气净化类</a></li>
+					<li><a href="#javascript">周边产品</a></li>
+					<li><a href="#javascript">第三方配件</a></li>
+					<li><a href="#javascript">全部商品</a></li>
+					<li><a href="#javascript">服务</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</header>
+	<!--页面主体部分-->
+	<div class="page-content">
+	<!--结构
+		banner-3d  -> perspective舞台
+
+			ul  -> transform-style:preserve-3d;
+
+				li 
+					banner-wrap-1 主体图片1;
+						banner-box-1 图片部分1; ->主体图片;
+							img -> ...
+						banner-box-2 图片部分2; ->文字图片;
+							img -> ...
+						banner-box-3 图片部分3; ->背景图片;
+							img -> ...
+	-->
+		<div class="banner-3d">
+			<div class="banner-shadow">
+				<img src="images/banner-shadow.png" alt="">
+			</div>
+			<ul class="banner-show">
+				<li class="active">
+					<div class="banner-wrap">
+						<div class="banner-box-1">
+							<img src="images/banner1-1.png" alt="千锋教育">
+						</div>
+						<div class="banner-box-2">
+							<img src="images/banner1-2.png" alt="千锋教育">
+						</div>
+						<div class="banner-box-3">
+							<img src="images/banner1-3.png" alt="千锋教育">
+						</div>
+					</div>
+				</li>
+				<li >
+					<div class="banner-wrap">
+						<div class="banner-box-1">
+							<img src="images/banner2-1.png" alt="千锋教育">
+						</div>
+						<div class="banner-box-2">
+							<img src="images/banner2-2.png" alt="千锋教育">
+						</div>
+						<div class="banner-box-3">
+							<img src="images/banner2-3.png" alt="千锋教育">
+						</div>
+					</div>
+				</li>
+				<li >
+					<div class="banner-wrap">
+						<div class="banner-box-1">
+							<img src="images/banner3-1.png" alt="千锋教育">
+						</div>
+						<div class="banner-box-2">
+							<img src="images/banner3-2.png" alt="千锋教育">
+						</div>
+						<div class="banner-box-3">
+							<img src="images/banner3-3.png" alt="千锋教育">
+						</div>
+					</div>
+				</li>
+			</ul>
+
+			<ul class="banner-buttons">
+				<li class="active"></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<!--活动列表-->
+		<section class="activity-panel"> 
+			<ul class="list">
+				<li>
+					<img src="images/activity-panel-1.jpg" alt="">
+					<a href="#javascript"></a>
+				</li>
+				<li>
+					<img src="images/activity-panel-2.jpg" alt="">
+					<a href="#javascript"></a>
+				</li>
+				<li>
+					<img src="images/activity-panel-3.jpg" alt="">
+					<a href="#javascript"></a>
+				</li>
+				<li>
+					<img src="images/activity-panel-4.jpg" alt="">
+					<a href="#javascript"></a>
+				</li>
+			</ul>
+		</section>
+		<section class="hot-panel">
+			<header>
+				<h5>热门商品</h5>
+			</header>
+			<ul class="goods-list">
+				<li>
+					<div class="details">
+						<img src="" alt="">
+					</div>
+				</li>
+			</ul>
+		</section>
+	</div>
+	<script src="src/all.js"></script>
+</body>
+</html>	

@@ -257,51 +257,6 @@ html{
 
 }
 
-//活动列表;
-.activity-panel{
-	width: $width;
-	height:200px;
-	padding-top:30px;
-	@include center;
-	.list{
-		overflow: hidden;
-	    position: relative;
-	    z-index: 0;
-	    margin-top: 29px;
-	    box-sizing: border-box;
-	    border: 1px solid rgba(0,0,0,.14);
-	    border-radius: 8px;
-	    background: #fff;
-	    box-shadow:0 3px 8px -6px rgba(0,0,0,.1); 
-	
-		@include center;
-		li{
-			float: left;
-			position:relative;
-			width: 25%;
-			height: 200px;
-			img{
-				width: 100%;
-				height: 100%;
-			}
-			a{
-				display: block;
-			    position: absolute;
-			    top: 0;
-			    right: 0;
-			    bottom: 0;
-			    left: 0;
-			    z-index: 4;
-			    cursor: pointer;
-			}
-			a:hover{
-				display: block;
-				box-shadow: inset 0 0 38px rgba(0,0,0,.08);
-	    		transition: all .15s ease;
-			}
-		}
 
-	}
-}
 
 
